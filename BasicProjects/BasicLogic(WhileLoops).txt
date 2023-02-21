@@ -1,0 +1,28 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        string password="secret";
+        string attempt = "";
+        int attempts=0;
+        
+        Console.WriteLine("Please input the correct password.");
+        attempt=Console.ReadLine();
+        if (attempt == password)
+            { Console.WriteLine("Password correct."); }
+            else {
+            while((attempts<3) && (attempt!= password))
+            {
+            Console.WriteLine("Incorrect password.");
+                    Console.WriteLine("Please input the correct password.");
+        attempt=Console.ReadLine();
+            attempts = attempts + 1;
+            }
+            if (attempt != password)
+            {Console.WriteLine("You are out of attempts");}
+            else Console.WriteLine("Correct Password");
+        }
+    }
+}

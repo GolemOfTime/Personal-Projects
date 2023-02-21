@@ -1,0 +1,24 @@
+using System;
+
+public class TimesTable
+{
+    public static void Main(string[] args)
+    {
+        int table;
+        int sum;
+        int loop;
+        
+        Console.WriteLine("Table input.");
+    
+        table = Convert.ToInt32(Console.ReadLine());
+        
+        for (loop = 0; loop<10;loop++)
+        {
+        sum = table * loop;
+        Console.WriteLine(sum+"\n");
+        }
+        
+        Console.WriteLine(table*loop);
+            
+    }
+}

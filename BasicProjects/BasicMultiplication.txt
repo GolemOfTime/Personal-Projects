@@ -1,0 +1,15 @@
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        double SharePrice;
+        int ShareNumber;
+        double TotalValue;
+        Console.WriteLine("Whassa- whassa- whassa- whassup bitconnnneeeeee-"+"\nHow much are your shares babes?");
+        SharePrice = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("How many shares you bought lmao");
+        ShareNumber = Convert.ToInt32(Console.ReadLine());
+        TotalValue = SharePrice * ShareNumber;
+        Console.WriteLine("Your shares are worth "+TotalValue);
+    }
+}

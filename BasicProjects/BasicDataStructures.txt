@@ -1,0 +1,61 @@
+using System;
+
+namespace DataStructures
+{
+    public class program
+    {
+        public static void Main(string[] args)
+        {
+            //Arrays
+            string[] names = new string[4];
+            //string[] names = { "a", "b", "c", "d" };
+
+            for (int loop = 0; loop < names.Length; loop++)
+            {
+                Console.WriteLine("Name?");
+                names[loop] = Console.ReadLine();
+            }
+
+            names[1] = "James";
+            Console.WriteLine("******************Display**************");
+            for (int loop = 0; loop < names.Length; loop++)
+            {
+                Console.WriteLine(names[loop]);
+            }
+
+            //Queues
+            Queue<string> QNames = new Queue<string>();
+            QNames.Enqueue("Billy");
+            QNames.Enqueue("Bobby");
+            Console.WriteLine("Enter a name");
+            QNames.Enqueue(Console.ReadLine());
+            Console.WriteLine("Item at head of Q " + QNames.Peek());
+            foreach (string item in QNames)
+            {
+                Console.WriteLine(item);
+            }
+            //Remove an item
+            Console.WriteLine("Removed an item");
+            QNames.Dequeue();
+            foreach (string item in QNames)
+            {
+                Console.WriteLine(item);
+            }
+
+            //Stack
+            Stack<string> myStack = new Stack<string>();
+            for (int i = 0; i < 3; i++)
+            {
+                myStack.Push(Console.ReadLine());
+            }
+            Console.WriteLine("Items in stack");
+            foreach (string item in myStack)
+            { Console.WriteLine(item); }
+            Console.WriteLine("Item at top of Stack " + myStack.Peek());
+            myStack.Pop();
+            Console.WriteLine("Removed an item");
+            foreach (string item in myStack)
+            { Console.WriteLine(item); }
+        }
+    }
+}

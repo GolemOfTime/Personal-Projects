@@ -1,0 +1,20 @@
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        double numA;
+        double numB;
+        double numC;
+        double ans;
+        
+        Console.WriteLine(First Number);
+        numA = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine(Second Number);
+        numB = Convert.ToDouble(Console.ReadLine());
+        
+        ans = numA + numB;
+        Console.WriteLine(Answer =  + ans);
+    
+
+    }
+}

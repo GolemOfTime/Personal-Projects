@@ -1,0 +1,29 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        int distance;
+        double cost;
+        
+    Console.WriteLine("Welcome to Freddy Fazbear's Pizza delivery service.\nEnter you distance.");
+    
+        distance = Convert.ToInt32(Console.ReadLine());
+        cost = 0;
+     if ((distance<=0) || (distance>=40))
+            { Console.WriteLine("Invalid distance");}
+            else if (distance> 10)
+            {cost = 15.00;}
+            else if (distance <=5)
+            {cost = 3.00;}
+            else if (distance >5 || (distance<10))
+            {cost = 5.00;}
+            else
+            {cost = 99.99;}
+            
+            Console.WriteLine("Your pizza delivery will cost you "+cost);
+    
+
+    }
+}

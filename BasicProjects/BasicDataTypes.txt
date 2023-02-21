@@ -1,0 +1,27 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine ("Hello Mono World");
+            string firstName = "";
+            string surname = "";
+            int age;
+            double height;
+            string address = "";
+            
+            Console.WriteLine("Enter first name");
+            firstName = Console.ReadLine();
+            Console.WriteLine ("Enter surname");
+            surname = Console.ReadLine();
+            
+            Console.WriteLine(firstName + " " + surname + " Have a boy.\nGive me your address.");
+                address = Console.ReadLine();
+                Console.WriteLine("A drone strike is on the way to " + address +"\nhand over your age and I might spare thee.");
+            age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("HEIGHT?????");
+            height = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine(firstName+" "+surname+" "+"is aged "+age+ " and is "+height) ;
+    }
+}

@@ -1,0 +1,19 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+       double total=0;
+       double item=0;
+       
+       do
+       {
+           
+           Console.WriteLine("Please scan the next item");
+            item=Convert.ToDouble(Console.ReadLine());
+            total = total+item;
+       } while(item>0);
+       Console.WriteLine(total);
+    }
+}
